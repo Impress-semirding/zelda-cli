@@ -1,0 +1,59 @@
+{
+  "author": "zhouningyi",
+  "name": "lmap",
+  "description": "leaflet based 2d map visualization",
+  "repository": {
+    "type": "git"
+  },
+  "version": "0.1.9",
+  "scripts": {
+    "test": "mocha -r jscoverage test",
+    "pub": "node ./bin/publish"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "IE": ">8",
+    "chrome": ">20",
+    "safari": "*",
+    "firefox": "*"
+  },
+  "dependencies": {
+    "aliyun-common-utils": "0.0.27",
+    "aliyun-map-utils": "0.0.26",
+    "bcore": "0.0.20",
+    "d3-scale": "^1.0.4",
+    "konva": "^0.13.0",
+    "leaflet": "^1.0.3",
+    "lodash": "^4.17.4",
+    "ngeohash": "^0.6.0",
+    "turf-concave": "^3.0.5",
+    "turf-distance": "^3.0.5",
+    "turf-line-distance": "^3.0.5",
+    "turf-simplify": "^3.0.1"
+  },
+  "devDependencies": {
+    "async": "",
+    "babel": "^6.5.2",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-es2016": "^6.11.3",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-preset-stage-2": "^6.13.0",
+    "css-loader": "^0.25.0",
+    "dat-gui": "^0.5.0",
+    "expect.js": "*",
+    "jscoverage": "0.5.3",
+    "mocha": "*",
+    "node-geocoder": "",
+    "postcss-loader": "^0.11.1",
+    "request": "",
+    "style-loader": "^0.13.1",
+    "supertest": "*",
+    "tween.js": "",
+    "url-loader": "^0.5.7",
+    "xfs": "^0.2.1"
+  }
+}

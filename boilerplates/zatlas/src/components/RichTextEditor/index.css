@@ -1,0 +1,80 @@
+/**
+ * @Author: mark
+ * @Date:   2017-06-23T14:11:44+08:00
+ * @Email:  mark_z1988@icloud.com
+ * @Filename: index.css
+ * @Last modified by:   mark
+ * @Last modified time: 2017-07-31T13:53:41+08:00
+ * @License: MIT
+ */
+
+
+:global(#toolbar) {
+  position: absolute;
+  top: 100%;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.container :global(.quill){
+  height: 100%;
+}
+
+.container :global(p){
+  white-space: pre;
+}
+
+.txtcontainer :global(.ql-size-huge){
+  font-size: 2.5em;
+}
+
+.txtcontainer :global(.ql-align-center){
+  text-align: center;
+}
+
+.txtcontainer :global(.ql-align-right){
+  text-align: right;
+}
+
+.txtcontainer :global(.ql-align-justify){
+  text-align: justify;
+}
+
+
+.txtcontainer :global(.ql-size-large){
+  font-size: 1.5em;
+}
+
+.txtcontainer :global(.ql-size-small){
+  font-size: 0.75em;
+}
+
+.txtcontainer :global(blockquote){
+  border-left: 4px solid #ccc;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-left: 16px;
+}
+.txtcontainer :global(ul){
+  padding-left: 3em;
+}
+
+.txtcontainer :global(ol){
+  padding-left: 3em;
+}
+
+.txtcontainer {
+  padding: 12px 15px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 13px;
+  width: calc(100% - 2px);
+  tab-size: 4;
+  outline: none;
+  font-family: Helvetica, Arial, sans-serif;
+}

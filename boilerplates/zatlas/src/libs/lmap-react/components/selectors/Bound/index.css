@@ -1,0 +1,17 @@
+
+.lmap_bound-container{
+  z-index: 10000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.lmap_bound-div{
+	border: 1px dashed #fff;
+	position: absolute;
+	pointer-events: none;
+}

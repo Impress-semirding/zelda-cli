@@ -1,9 +1,10 @@
 import which from 'which';
 
-function runCmd(cmd, args, fn) {
+function runCmd(cmd, args, dest, fn) {
   args = args || [];
   var runner = require('child_process').spawn(cmd, args, {
     // keep color
+    cwd: dest,
     stdio: "inherit"
   });
   runner.on('close', function (code) {
@@ -26,12 +27,10 @@ function findNpm() {
   throw new Error('please install npm');
 }
 
-export default function (done) {
+export default function (dest, done) {
   const npm = findNpm();
-  runCmd(which.sync(npm), ['install'], function () {
-    runCmd(which.sync(npm), ['install', 'dva', '--save'], function () {
-      console.log(npm + ' install end');
-      done();
-    });
+  runCmd(which.sync(npm), ['install'], dest, function () {
+    console.log(npm + ' install end');
+    done();
   });
 };

@@ -1,0 +1,67 @@
+.leaflet-edit-node {
+  white-space: nowrap;
+  color: #fff;
+  position: relative;
+  left: -50%;
+  top: -50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  padding: 4px 8px;
+  display: inline-block;
+}
+
+.leaflet-edit-node:hover {
+  opacity: 0.8;
+}
+
+.leaflet-edit-node-submit {
+  background-color: rgba(190, 0, 0, 0.8);
+}
+
+.no-events {
+  pointer-events: none;
+}
+.in-out-icon{
+  border: 2px dashed #0ff;
+  color: #0ff;
+  -webkit-animation: in-out-icon 1s infinite; 
+  animation: in-out-icon 1s infinite; 
+}
+
+.edit-page {
+  position: absolute;
+  left: 25%;
+  top: 10.5%;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+  height: 60px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 60px;
+  color: #f00;
+}
+
+@-webkit-keyframes in-out-icon {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes in-out-icon {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,12 @@
+.leaflet-vertex-icon{
+    background: #0cc;
+    border-radius: 100px;
+    border: solid 0px;
+}
+
+.leaflet-middle-icon{
+    background: #099;
+    border-radius: 100px;
+    border: solid 0px;
+    opacity: 0.1;
+}

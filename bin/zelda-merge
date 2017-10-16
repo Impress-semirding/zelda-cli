@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+const program = require('commander');
+
+program
+  .usage('[options] config-file')
+  .parse(process.argv);
+
+require('../lib/link')({
+  ...program,
+  merge: true,
+  install: false,
+});

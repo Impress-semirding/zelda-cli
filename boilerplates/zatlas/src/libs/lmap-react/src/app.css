@@ -1,0 +1,32 @@
+/*
+* @Author: zhouningyi
+* @Date:   2017-01-01 16:00:40
+* @Last Modified by:   zhouningyi
+* @Last Modified time: 2017-02-16 20:37:53
+*/
+
+html, body, .app, .container, .control{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+html, body, .app, .container{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+}
+.app{
+	z-index: 0;
+}
+.control{
+	z-index: 1;
+	width: 300px;
+	height: auto;
+	min-height: 200px;
+	background: #222;
+}

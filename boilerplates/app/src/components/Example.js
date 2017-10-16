@@ -1,14 +1,28 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 
-const Example = () => {
-  return (
-    <div>
-      Example
-    </div>
-  );
-};
+import styles from './Example.css';
 
-Example.propTypes = {
-};
+class Example extends PureComponent {
+  static propTypes = {
+    data: PropTypes.shape({
+      name: PropTypes.string
+    })
+  };
+
+  static defaultProps = {
+    data: {
+      name: ''
+    }
+  };
+
+  state = {};
+
+  render() {
+    const { name } = this.props.data;
+
+    return <div className={styles.root}>{name}</div>;
+  }
+}
 
 export default Example;

@@ -4,23 +4,7 @@
 
 ### prepare
 
-* git clone git@gitlab.zhonganonline.com:frontend-engineering/zelda-cli.git
-
-* git clone git@gitlab.zhonganonline.com:frontend-engineering/zelda-ast.git
-
-* cd zelda-ast
-
-* npm install
-
-* npm link
-
-* cd zelda-cli
-
-* npm install
-
-* npm link zelda-ast
-
-* npm link
+* npm i zelda-cli -g
 
 ### use
 
